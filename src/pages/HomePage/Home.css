@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&display=swap');
+
+.home-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12vh;
+    padding-top: 30vh;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 2;
+}
+
+#intro{
+    font-size: 20vh;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#name{
+    font-size: 5vh;
+    font-weight: 300;
+    padding-left: 1.5vh;
+}
+
+#bio{
+    font-size: 2.5vh;
+    font-weight: 200;
+    padding-left: 1.7vh;
+    padding-top: 2vh
+}
+
+.dot1{
+    position: relative;
+    height: 48vw;
+    width: 48vw;
+    background-color: #C3C9E9;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translate(-3vw, -35vw);
+    margin: 0;
+}
+
+.dot2{
+    position: relative;
+    z-index: -1;
+    height: 80vw;
+    width: 80vw;
+    background-color: #6C91C2;
+    border-radius: 50%;
+    transform: translate(28vw, -89vw);
+}

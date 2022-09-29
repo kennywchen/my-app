@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&display=swap');
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 13vh;
+    padding-left: 12vh;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 1;
+}
+
+#title{
+    font-size: 12.5vh;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+#resume{
+    display: flex;
+    flex-direction: column;
+}
