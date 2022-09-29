@@ -6,5 +6,19 @@
 }
 
 #experience{
+  position: relative;
   transform: translate(0vw, -100vw);
+  z-index: 1;
+}
+
+#projects{
+  position: relative;
+  transform: translate(0vw, -195vw);
+  z-index: -1;
+}
+
+#contacts{
+  position: relative;
+  transform: translate(0vw, -275vw);
+  z-index: -1;
 }

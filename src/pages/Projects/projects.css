@@ -1,0 +1,37 @@
+#text{
+    padding-top: 13vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 13vh;
+    padding-left: 12vh;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 1;
+}
+
+#desc{
+    padding-top: 5vh;
+    padding-left: 1vh;
+    font-size: 2vh;
+    font-weight: 300;
+}
+
+.dot5{
+    position: relative;
+    height: 62vw;
+    width: 62vw;
+    background-color: #98ADD6;
+    border-radius: 50%;
+    transform: translate(-5vw, -28vw);
+    z-index: -1;
+}
+
+.dot6{
+    position: relative;
+    height: 65vw;
+    width: 65vw;
+    background-color: #9B9A9F;
+    border-radius: 50%;
+    transform: translate(40vw, -65vw);
+    z-index: 1;
+}

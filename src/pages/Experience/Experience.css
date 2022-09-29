@@ -7,7 +7,7 @@
     padding-top: 13vh;
     padding-left: 12vh;
     font-family: 'Noto Sans', sans-serif;
-    z-index: 1;
+    z-index: 2;
 }
 
 #title{
@@ -21,4 +21,49 @@
 #resume{
     display: flex;
     flex-direction: column;
+    padding-top: 1vh;
+    padding-left: 1vh;
+}
+
+#item{
+    padding-top: 3vh;
+    font-weight: 300;
+}
+
+#date{
+    font-size: 2vh;
+}
+
+#role{
+    font-size: 2.5vh;
+    padding-bottom: 3vh;
+}
+
+#line{
+    height: 1px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+    width: 40vw;
+    margin-left: 0;
+}
+
+.dot3{
+    position: relative;
+    height: 60vw;
+    width: 60vw;
+    background-color: #AAABBC;
+    border-radius: 50%;
+    transform: translate(-3vw, -47vw);
+    z-index: 1;
+}
+
+.dot4{
+    position: relative;
+    height: 43vw;
+    width: 43vw;
+    background-color: #373F47;
+    border-radius: 50%;
+    transform: translate(46vw, -107vw);
+    z-index: -1;
 }

@@ -1,0 +1,12 @@
+#Contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 1;
+}
+
+.contactTitle{
+    padding-left: 12.5vh;
+    padding-top: 13vh
+}
