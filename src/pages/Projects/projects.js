@@ -5,7 +5,7 @@ import 'animate.css'
 
 export default function Projects(){
     return(
-        <div>
+        <div className="wrapper">
             <div id="Projects" className="animate__animated animate__fadeInLeft">
                 <div id="text">
                     <div id="title">projects</div>

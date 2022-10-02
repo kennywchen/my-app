@@ -1,7 +1,7 @@
 import React from "react";
 import "./Experience.css"
 import 'animate.css'
-
+import ExperienceItem from "../../components/experienceItem/experienceItem";
 
 export default function Experience(){
     return(
@@ -9,25 +9,23 @@ export default function Experience(){
             <div id="Experience" className="text">
                 <div id="title" className="animate__animated animate__fadeInLeft">experiences</div>
                 <div id="resume" className="animate__animated animate__fadeInLeft">
-                        <div id="item">
-                            <div id="date">fa'22</div>
-                            <div id="role">mentored developer @ berkeley codebase</div>
-                            <hr id="line"></hr>
-                        </div>
+                        <ExperienceItem
+                            date="fa'22"
+                            role="mentored developer @ berkeley codebase"
+                        />
                         <div id="item"> 
                             <div id="date">sp'21 - su'22</div>
                             <div id="role">research assistant @ stanford univeristy, <br></br>department of structural biology</div>
                             <hr id="line"></hr>
                         </div>
-                        <div id="item">
-                            <div id="date">su'21</div>
-                            <div id="role">student @ uci cosmos summer program</div>
-                            <hr id="line"></hr>
-                        </div>
-                        <div id="item">
-                            <div id="date">sp'20</div>
-                            <div id="role">editor in chief @ "The Best Algebra 2/Pre-Calculus Book Ever"</div>
-                        </div>
+                        <ExperienceItem
+                            date="su'21"
+                            role="research student @ uci cosmos summer program"
+                        />
+                        <ExperienceItem
+                            date="sp'20"
+                            role="editor in chief @ 'The Best Algebra 2/Pre-Calculus Book Ever'"
+                        />
                 </div>
             </div>
             <div className="dot3"></div>

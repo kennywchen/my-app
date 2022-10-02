@@ -49,7 +49,7 @@
 }
 
 .dot3{
-    position: relative;
+    position: absolute;
     height: 60vw;
     width: 60vw;
     background-color: #AAABBC;
@@ -59,11 +59,11 @@
 }
 
 .dot4{
-    position: relative;
+    position: absolute;
     height: 43vw;
     width: 43vw;
     background-color: #373F47;
     border-radius: 50%;
-    transform: translate(46vw, -107vw);
+    transform: translate(46vw, -47vw);
     z-index: -1;
 }

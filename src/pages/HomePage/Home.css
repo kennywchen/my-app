@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&display=swap');
 
+.home{
+    position: relative;
+}
+
 .home-section{
     position: relative;
     display: flex;
@@ -31,7 +35,7 @@
 }
 
 .dot1{
-    position: relative;
+    position: absolute;
     height: 48vw;
     width: 48vw;
     background-color: #C3C9E9;
@@ -42,11 +46,11 @@
 }
 
 .dot2{
-    position: relative;
+    position: absolute;
     z-index: -1;
     height: 80vw;
     width: 80vw;
     background-color: #6C91C2;
     border-radius: 50%;
-    transform: translate(28vw, -89vw);
+    transform: translate(28vw, -40vw);
 }

@@ -17,7 +17,7 @@
 }
 
 .dot5{
-    position: relative;
+    position: absolute;
     height: 62vw;
     width: 62vw;
     background-color: #98ADD6;
@@ -27,11 +27,11 @@
 }
 
 .dot6{
-    position: relative;
-    height: 65vw;
-    width: 65vw;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
     background-color: #9B9A9F;
     border-radius: 50%;
-    transform: translate(40vw, -65vw);
+    transform: translate(40vw, -10vh);
     z-index: 1;
 }
