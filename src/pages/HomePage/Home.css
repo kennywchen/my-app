@@ -14,25 +14,36 @@
     z-index: 2;
 }
 
-#intro{
-    font-size: 20vh;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
 #name{
     font-size: 5vh;
     font-weight: 300;
     padding-left: 1.5vh;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255,255,255,.75);
 }
 
 #bio{
     font-size: 2.5vh;
     font-weight: 200;
     padding-left: 1.7vh;
-    padding-top: 2vh
+    padding-top: 2vh;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255,255,255,.75);
+
 }
+
+#bio1{
+    font-size: 2.5vh;
+    font-weight: 200;
+    padding-left: 1.7vh;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255,255,255,.75);
+
+}
+
 
 .dot1{
     position: absolute;
@@ -45,6 +56,7 @@
     margin: 0;
 }
 
+
 .dot2{
     position: absolute;
     z-index: -1;
@@ -54,3 +66,60 @@
     border-radius: 50%;
     transform: translate(28vw, -40vw);
 }
+
+
+.intro{
+    font-size: 20vh;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255,255,255,.75);
+}
+
+.anim-typewriter{
+    animation: typewriter 2s steps(22) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0%;}
+    to{width: 75vw; border-right: 0px;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+}
+
+
+.anim-typewriter1{
+    animation: typewriter1 2s steps(22) 2s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter1{
+    from{width: 0%;}
+    to{width: 30vw}
+    100%{
+        border-right: 0px;
+    }
+}
+
+
+.anim-typewriter2{
+    animation: typewriter2 2s steps(22) 3s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter2{
+    from{width: 0%;}
+    to{width: 55vw; border-right: 0px;}
+}
+
+.anim-typewriter3{
+    animation: typewriter3 1.5s steps(22) 4s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter3{
+    from{width: 0%;}
+    to{width: 25vw; border-right: 0px;}
+}
+
