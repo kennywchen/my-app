@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ExperienceItem({props}){
+export default function ExperienceItem(props){
     return(
         // <div id="item">
         //    <div id="date">fa'22</div>

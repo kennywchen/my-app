@@ -6,10 +6,10 @@ import ExperienceItem from "../../components/experienceItem/experienceItem";
 
 export default function Experience(){
 
-    const [expr, setExpr] = React.useState(null);
+    const [exper, setExper] = React.useState(null);
     async function fetchData() {
         const res = await axios.get(
-            "https://api.airtable.com/v0/appFLXHW5lyngy540/Experiences?maxRecords=3&view=Grid%20view",
+            "https://api.airtable.com/v0/appFLXHW5lyngy540/Experiences?maxRecords=10&view=Grid%20view",
           {
             headers: {
               authorization: `Bearer keyBG2jWmGUriOsxD`,
@@ -17,14 +17,14 @@ export default function Experience(){
           }
         );
         console.log(res.data);
-        setExpr(res.data.records);
+        setExper(res.data.records);
     }
 
     React.useEffect(() => {
         fetchData();
       }, []);
     
-    if (!expr) {
+    if (!exper) {
     return <div>Loading...</div>;
     }
 
@@ -32,28 +32,10 @@ export default function Experience(){
         <div>
             <div id="Experience" className="text">
                 <div id="title" className="animate__animated animate__fadeInLeft">experiences</div>
-                <div id="resume" className="animate__animated animate__fadeInLeft">
-                        
-                        {expr.map((record) => (
-                            <ExperienceItem key={record.id} props={record.fields}/>
-                        ))}
-                            
-                        {/* date="fa'22" */}
-                        {/* role="mentored developer @ berkeley codebase" */}
-                        
-                        <div id="item"> 
-                            <div id="date">sp'21 - su'22</div>
-                            <div id="role">research assistant @ stanford univeristy, <br></br>department of structural biology</div>
-                            <hr id="line"></hr>
-                        </div>
-                        <ExperienceItem
-                            date="su'21"
-                            role="research student @ uci cosmos summer program"
-                        />
-                        <ExperienceItem
-                            date="sp'20"
-                            role="editor in chief @ 'The Best Algebra 2/Pre-Calculus Book Ever'"
-                        />
+                <div id="resume" className="animate__animated animate__fadeInLeft">  
+                    {exper.map((record) => (
+                        <ExperienceItem key={record.id} date={record.fields.date} role={record.fields.role}/>
+                    ))}
                 </div>
             </div>
             <div className="dot3"></div>
